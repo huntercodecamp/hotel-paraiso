@@ -4,7 +4,24 @@
 	padding: 0;
 	font-size:100%;
 	box-sizing: border-box;
+	/*border: 1px solid red;*/
 	
+}
+#reserva{
+	padding: 25px;
+}
+#mapa {
+	padding: 25px;
+}
+form label{
+	padding: 20px 0px;
+	margin:20px 0px;
+}
+form input{
+	margin:15px 0px;
+}
+form h3 {
+	margin:20px 0px;
 }
 nav,ul{
 	list-style: none;
@@ -25,7 +42,8 @@ a:hover {
 header{
 	background: white;
 	width: 100%;
-	position: absolute;
+	z-index: 1000;
+	position: fixed;
 	
 	top: 0;
 	left: 0;
@@ -52,7 +70,11 @@ header li:last-child{margin-right: 0;}
 	}
 	header li {	margin:5px; display: inline}
 }
-
+.imagens1{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
 /* HERO */
 .Hero{
 	
@@ -67,7 +89,7 @@ header li:last-child{margin-right: 0;}
 	text-align: center;
 
 }
-.Hero h1{
+.Hero h3{
 	font-size: 3.2rem;
 	margin-bottom: 15px;
 }
@@ -95,10 +117,23 @@ header li:last-child{margin-right: 0;}
 
 .conheca-o-hotel{
 	display: flex; flex-direction: column; align-items: center; padding: 100px 50px; text-align: center;
+	background-color: #3a3a3a;
 }
-.conheca-o-hotel h3{ font-size: 1.8rem; margin-bottom: 35px;  }
-.conheca-o-hotel p{ max-width: 800px; margin-bottom: 35px; }
 
+#sobre{
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	text-align:center;
+}
+.titulo{ font-size: 1.8rem; margin-bottom: 35px;  }
+p{ max-width: 100%; margin-bottom: 35px; text-align:center; }
+[id^="div-*"] {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 hr{
 	width: 200px;
 	color: black;
@@ -110,6 +145,7 @@ hr{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+
 }
 .conheca-o-hotel .grid li {height: 350px;	 margin: 15px; border-radius: 4px; background-clip: content-box; background-size:  border-box; background-size: center;}	
 

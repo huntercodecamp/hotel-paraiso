@@ -10,41 +10,123 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
 </head>
-<body>
-	<header>
+<body id="index">
+	<header >
 		<a href="">
 			<img src="imgs/logo.png" alt="Hotel Paraíso">
 		</a>
 
-		<nav>
+		<nav >
 			<ul>
-				<li><a href="">Início</a></li>
-				<li><a href="">Sobre</a></li>
-				<li><a href="">Reserva</a></li>
-				<li><a href="">Contato</a></li>
+				<li><a href="#index">Início</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#reserva">Reserva</a></li>
+				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
 	</header>
+
 	<section class="Hero">
 		<h1> Conheça este paraíso chamado Itacaré </h1>
-		<h3> "Aconchego, conforto, simpatia e alto astral" </h3>
-		<a href="" class="btn"> Saiba Mais</a>
+		<h3 class="titulo"> "Aconchego, conforto, simpatia e alto astral" </h3>
+		<a href="" class="btn" > Saiba Mais</a>
 	</section>
-	<section class="conheca-o-hotel">
-		<h3> Conheça o Hotel Paraíso</h3>
-		<p>
+
+	<section id="sobre" class="grid"> 
+
+		<div id="zika">
+			<div id="div-1">
+				<figure>
+					<img src="imgs/itacare-01.jpg" alt="itacare 1ª imagem" class="imagens1">
+				</figure>
+				<h3 class="titulo">AV. NÃO EXISTE, 100M DO HOTEL</h3>
+				<p class="paragrafo">
+					Localizado em Mera mente ilustrativo, a 300 metros <br>
+					do Metrô Paraíso e a 5 km do Terminal,o Hotel <br> 
+					Paraíso oferece café da manhã.
+				</p>
+			</div>
+			<div id="div-2">
+
+				<figure>
+					<img src="imgs/itacare-02.jpg" alt="itacare 2ª imagem" class="imagens1">
+				</figure>
+				<h3 class="titulo">
+					TOTAL COMODIDADE
+				</h3>
+				<p class="paragrafo">
+					As acomodações dispõem de TV de LCD com canais a cabo,<br>
+					ar-condicionado e ventilador de teto. A propriedade <br>
+					conta com recepção 24h e Wi-Fi grátis nas áreas sociais.
+				</p>
+
+			</div>
+			<div id="div-3">
+
+				<figure>
+					<img src="imgs/itacare-03.jpg" alt="itacare 3ª imagem" class="imagens1">
+				</figure>
+				<h3 class="titulo">
+					CAFÉ DA MANHÃ (TEMPORARIAMENTE INDISPONÍVEL).
+				</h3>
+				<p class="paragrafo">
+					Em função da Pandemia não estamos servindo (temporariamente) o nosso café da manhã.
+				</p>
+
+			</div>
+		</div>
+		<h3 class="titulo"> Conheça o Hotel Paraíso</h3>
+		<p class="paragrafo">
 			Feche os olhos e imagine o paraíso. <br>
 			Agora abra os olhos e arrume as malas!<br>
 			Venha para o Hotel Paraíso!
 
 		</p>
 		<hr>
-		<ul class="grid">
-			<li class="small" style="background: url(imgs/itacare-01.jpg);"></li>
-			<li class="large" style="background: url(imgs/itacare-02.jpg);"></li>
-			<li class="large" style="background: url(imgs/itacare-03.jpg);"></li>
-			<li class="small" style="background: url(imgs/itarace-04.jpg);"></li>
-		</ul>
-	</section>
-</body>
-</html>
+
+
+		<section class="conheca-o-hotel">
+			<ul class="grid">
+				<li class="small" style="background: url(imgs/itacare-01.jpg);"></li>
+				<li class="large" style="background: url(imgs/itacare-02.jpg);"></li>
+				<li class="large" style="background: url(imgs/itacare-03.jpg);"></li>
+				<li class="small" style="background: url(imgs/itarace-04.jpg);"></li>
+			</ul>
+		</section>
+		<section id="mapa">
+			<h3 class="titulo"> Localização (Falsa) </h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7291.346978116906!2d-46.367989925512816!3d-23.9719834344869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1ccb63c597b1%3A0xed03a0887b768f8c!2sAv.%20Ayrton%20Senna%20da%20Silva%2C%20500%20-%20Itarar%C3%A9%2C%20S%C3%A3o%20Vicente%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1641558289600!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</section>
+		<section id="reserva">
+			
+
+			<form action="">
+				<h3> Preencha todos os campos do formulário </h3>
+				<label for="nome">
+					Nome Completo: <br>
+					<input type="text" name="nome" id="nome">
+				</label>
+				<br>
+				<label for="periodo">
+					Periodo: <br>
+					<input type="text" name="periodo" id="periodo">
+				</label><br>
+				<label for="pagamento">
+					Forma de Pagamento: <br>
+					<select name="pagamento" id="pagamento">
+						<option value="credcard">Cartão de Crédito</option>
+						<option value="debitocard">Debito</option>
+					</select>
+					<br>
+				</label><br>
+				<label for="texto">Comente algo: <br>
+					<textarea name="coment" id="" cols="30" rows="10"></textarea>
+				</label><br>
+				<input type="submit"> 
+			</form>
+		</section>
+		<footer>
+			by: <a href="mailto:huntercodecamp@gmail.com"> huntercodecamp@gmail.com </a>
+		</footer>
+	</body>
+	</html>
