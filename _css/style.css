@@ -1,0 +1,87 @@
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size:100%;
+	color: #333;
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+	/*border: 1px solid red;*/
+}
+.navbar{
+	box-shadow: 0px 0px 8px black;
+	line-height: 40px;
+}
+
+section {
+	height: auto;
+}
+
+.navbar a:active{
+	background: rgba(255,255,255,.1);
+}
+
+
+
+section{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+#Inicio-Menu{
+	padding: 0;
+}
+body{
+	background: url(../_imgs/hero.jpg);
+	background-size:cover cover;
+	background-repeat: no-repeat;
+
+}
+#Inicio-Menu{
+	
+	min-height: 100vh;
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+	text-align: center;
+
+}
+
+
+#Inicio-Menu h1, #Inicio-Menu h3 {
+
+	color: white;
+}
+#Inicio-Menu h3{
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+}
+#Inicio-Menu h3{
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+#Inicio-Menu label, #Inicio-Menu .btn{
+
+	line-height: 40px;
+}
+
+#Inicio-Menu .btn{
+	border-radius: 4px; 
+	background-color:rgba(255,255,255,.1);
+}
+#Inicio-Menu .btn:hover{
+	opacity: 1;
+}
+
+@media (max-width: 700px){
+	#Inicio-Menu {bottom: 0; }
+	#Inicio-Menu h1 {font-size: 2.5rem}
+	#Inicio-Menu h3 {font-size: 1.5rem}
+
+}
+
+
+
