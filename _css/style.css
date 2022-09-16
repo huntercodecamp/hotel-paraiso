@@ -1,6 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300;700 & display=swap');
+h1, h2, h3, h4,h5,h6,p,label  {
+	voice-family: male;
+	richness: 80;
+	
+}
 *{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'roboto', 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size:100%;
@@ -32,13 +37,16 @@ section{
 #Inicio-Menu{
 	padding: 0;
 }
+
 body{
-	background: url(./_imgs/hero.jpg);
-	background-size:cover cover;
+	background-size:cover, cover ;
+	background: url(../_imgs/hero.jpg);
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 
 }
-#Inicio-Menu{
+#Inicio-Menu, #Mapa-Menu{
 	
 	min-height: 100vh;
 	color: #FFF;
@@ -50,7 +58,9 @@ body{
 
 }
 
-
+#Sobre-Menu{
+	background:white;
+}
 #Inicio-Menu h1, #Inicio-Menu h3 {
 
 	color: white;
@@ -77,6 +87,7 @@ body{
 }
 
 figure img {
+	width: 1fr;
 	border-radius:5px;
 }
 @media (max-width: 700px){

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hotel Paraíso, hospedaria para tirar suas férias </title>
 	<meta name="google-site-verification" content="nVANfgl8QOduta_onXjNnbFrSKxISkBUBuxal0K5PMg" />
-	<meta name="description" content="Desenvolvedor Full Stack, Criando soluções de T.I., Para sua Empresa! Faço Landing page, site, sistema web, Hospedagem em servidores linux. ">
+	<meta name="description" content="Hotel paraíso esse é um site demonstrativo de layout. ">
 	<meta name="keywords" content="HTML, CSS, JavaScript, php, MySQL, Banco de Dados, Desenvolvimento, Landing Page, Site, Web, Sistema">
 	<meta name="author" content="Fernando Silveira">
 
@@ -15,8 +15,16 @@
 
 	<link rel="stylesheet" href="_css/style.css">
 	<style>
-
-		
+		.album img {
+			box-shadow:0 0 15px #000;
+			width:18rem;
+		}
+		.album img:hover {
+			width: 20rem;
+		}
+		*{
+			/*border: 1px solid red;*/
+		}
 	</style>
 </head>
 <body data-bs-spy="scroll" 
@@ -82,32 +90,28 @@ aria-label="page" class="p-0" onLoad="msg()">
 </header>
 
 <div id="Inicio-Menu">
-	<div class="container">
+	<div class="container album">
 		<div class="row">
 			<div class="col text-center">
-				<form action="cadastra.php">
-					<h1> Conheça este paraíso chamado Itacaré </h1>
-					<h3 class="titulo"> "Aconchego, conforto, simpatia e alto astral" </h3>
-					<div class="align-center">
-						<label for="cadastroEmail" class="text-white"> 
-							E-Mail
-							<input type="email"  size="18" id="cadastroEmail" placeholder="exemple@gmail.com" required onfocus>
-						</label>
-						<input type="submit" class="btn text-white ">
-					</div>
-				</form>
+				<h1> Conheça este paraíso chamado Itacaré </h1>
+				<h3 class="titulo"> "Aconchego, conforto, simpatia e alto astral" </h3>
+				<div class="align-center">
+					<a class="btn bg-light" href="#Sobre-Menu" aria-current="page">
+						Saiba mais
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<section id="Sobre-Menu" class="bg-light">
+<section id="Sobre-Menu" class="bg-white">
 
 	<div class="container w-75">
 		<div class="row">
 			<div class="col">
-				<h1 >Sobre</h1>
-				<hr>
+				<h1 class="text-center">Sobre</h1>
+				<hr class="my-4">
 			</div>
 		</div>
 
@@ -119,14 +123,13 @@ aria-label="page" class="p-0" onLoad="msg()">
 			<div class="col-10">
 				<div class="container text-left text-wrap" id="cont-sobre">
 					<p>
-						Construido em 1950, Hotel paraíso levou 3 anos para ser construido, junto com as instalações do subsolo. Suas acomodações sao de 55 metros quadrados, possui vista para praia. além de ser próximo a vários pontos turísticos intessante o que mais atrai o publico é a proximidade em que o Hotel Paraíso fica a 100 metros da praia. Sua arquitetura em gesso, madeira e piso de marmore.  
+						Construído em 1950, Hotel paraíso levou 3 anos para ficar pronto. Suas acomodações são de 55 metros quadrados, possui vista para praia. além de ser próximo a vários pontos turísticos interessantes, O que mais atrai o publico é que fica apenas 100 metros da praia.
+
 					</p>
 					<p>
-						O hotel oferece café da manhã, almoço, café da tarde e jantar. A noite possui 200 metros bares com música clássica ao vivo todos os dias do ano. 
+						O hotel oferece café da manhã, almoço, café da tarde e jantar. A noite possui bares á 200 metros, com música clássica ao vivo, todos os dias do ano. 
 					</p>
-					<p>
-						Para mais informações clique no botão a seguir <a href="https://api.whatsapp.com/send?phone=5512997389576&text=Ol%C3%A1%2C%20Fernando%20Silveira!%20Estava%20no%20site%20do%20hotel%20para%C3%ADso%20e%20estou%20interessado%20em%20seus%20servi%C3%A7os!" class="btn btn-success">Whatsapp</a>
-					</p>
+					
 				</div>
 			</div>
 		</div>
@@ -134,101 +137,78 @@ aria-label="page" class="p-0" onLoad="msg()">
 	</div>
 </section>
 
-<section id="Fotos-Menu" class="bg-dark">
-	<div class="container">
+<section id="Fotos-Menu" class="bg-light">
+	<div class="container w-75 text-center ">
 		<div class="row">
-			<div class="col">
-				<h1 class="text-white"> Fotos</h1>
-				<hr>
+			<div class="col " id="foto">
+				<h2>Fotos</h2>
+				<hr class="my-4">
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<figure>
-					<a href="_imgs/itacare-01.jpg" title="Ver imagem real da frente do hotel paraíso em tela cheia." target="_blank">
-						<img src="_imgs/itacare-01.jpg" width="100%" style="height: auto;" alt="">
-
-					</a>
-					<figcaption class="text-white text-center">
-						Foto da frente do Hotel Paraíso.
-					</figcaption>
-				</figure>
-			</div>
-			<div class="col-md-4"> 
-				<a href="_imgs/itacare-02.jpg" title="Ver imagem em tamanho real da praia com a visão de frente do hotel paraíso" target="_blank">
-					<img src="_imgs/itacare-02.jpg" width="100%" alt="">
-				</a>
-				<figcaption class="text-white text-center">
-					Foto da entrada da praia em frente do Hotel Paraíso.
-				</figcaption>
-
-
+		
+		<div class="row ">
+			<div class="col-sm">
+				<div class="album" >
+					<img class="card-img-top" src="_imgs/itacare-01.jpg" alt="Card image cap">
+					<img class="card-img-top" src="_imgs/itacare-02.jpg" alt="Card image cap">
+					<img class="card-img-top" src="_imgs/itacare-03.jpg" alt="Card image cap">
+				</div>
 			</div>
 
-			<div class="col-md-4"> 
-				<a href="_imgs/itacare-03.jpg" title="Ver imagem em tamanho real da praia com a visão de frente do hotel paraíso" target="_blank">
-					<img src="_imgs/itacare-03.jpg" width="100%" alt="">
-				</a>
-				<figcaption class="text-white text-center">
-					Foto da entrada da praia em frente do Hotel Paraíso.
-				</figcaption>
 
-
-			</div>
-
-			
-			
 		</div>
+
+
 	</div>
-	
+</div>
 </section>
 
 <section id="Mapa-Menu" class="bg-light">
 	<div class="container w-75">
 		<div class="row">
 			<div class="col">
-				
+
 				<h1>Localização</h1>
-				<hr>
+				<hr class="my-4">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7291.346978116906!2d-46.367989925512816!3d-23.9719834344869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1ccb63c597b1%3A0xed03a0887b768f8c!2sAv.%20Ayrton%20Senna%20da%20Silva%2C%20500%20-%20Itarar%C3%A9%2C%20S%C3%A3o%20Vicente%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1641558289600!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4314.94254364477!2d-49.802334733681434!3d-29.44088850677433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zSG90w6lpcw!5e0!3m2!1spt-BR!2sbr!4v1663362894586!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="Contato-Menu" class="">
-	<div class="container-md w-75">
-		<form action="">
-			
-			
+<section id="Contato-Menu" class="bg-white" >
+	<div class="container w-75 ">
+		<form action="" class="box-shadow">
+
+
 			<div class="row">
 				<div class="col ">
-					<h1>Contato</h1>
+					<h1 >Contato</h1>
 					<hr>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<label for="contactName">Nome: </label>
 					<input type="text" id="contactName" class="form-control" placeholder="Fernando Silveira" required> 
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-4"> 
+				<div class="col-sm-4"> 
 					<label for="contactEmail">E-Mail</label>
 					<input type="email" id="contactEmail" class="form-control" placeholder="usuario@exemple.com" required>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<div class="form-group">
 						<label for="question"> Selecione a opção de contato. </label>
 
@@ -242,14 +222,14 @@ aria-label="page" class="p-0" onLoad="msg()">
 
 			</div>
 			<div class="row">
-				
-				<div class="col-md-12">
+
+				<div class="col-sm-12">
 					<textarea name="" id="contactAreaDescription" class="w-100" rows="5"></textarea>
 
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-1">
+				<div class="col-sm-1">
 					<input type="submit" class="btn btn-success " value="Enviar">
 				</div>
 			</div>
@@ -262,8 +242,12 @@ aria-label="page" class="p-0" onLoad="msg()">
 		<div class="row">
 			<div class="col">
 				<p class="text-white text-center p-5">
+
+					© Copyright Fernando Silveira Criado em 2022 - Todos os Direitos reservados. <br>
+					E-mail: <a href="mailto:fernandosilveira1991@gmail.com" class="text-info" target="_blank"> fernandosilveira1991@gmail.com </a> <br>
+
+					Whatsapp: <a href="https://api.whatsapp.com/send?phone=5512997389576&text=Ol%C3%A1%2C%20Fernando%20Silveira!%20Estava%20no%20site%20do%20hotel%20para%C3%ADso%20e%20estou%20interessado%20em%20seus%20servi%C3%A7os!" target="_blank" class="text-info">+5512997389576</a>
 					
-					© Copyright desde 2022, Fernando Silveira - All Rights Reserved - <a href="mailto:fernandosilveira1991@gmail.com" target="_blank"> fernandosilveira1991@gmail.com </a>
 
 				</p>
 			</div>
